@@ -1,0 +1,15 @@
+query GetProducts {
+  products(stage: PUBLISHED, last: 100) {
+    id
+    name
+    price
+    slug
+    brand
+    category
+    description
+    departament
+    image {
+      url
+    }
+  }
+}
